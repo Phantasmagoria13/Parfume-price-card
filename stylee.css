@@ -1,0 +1,133 @@
+body {
+   background-color: #f2ebe3;
+   font-family: 'Fraunces', serif;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+   box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: inherit;
+}
+
+h2,
+h4,
+p {
+   margin: 0;
+}
+
+#card {
+   height: 460px;
+   width: 600px;
+   display: flex;
+   border-radius: 10px;
+   overflow: hidden;
+   margin: auto;
+   margin-top: 90px;
+}
+
+#left-side {
+   height: 100%;
+   width: 100%;
+}
+
+#image {
+   height: 100%;
+   width: 100%;
+}
+
+#right-side {
+   height: 100%;
+   width: 100%;
+   padding: 30px;
+   background-color: white;
+}
+
+#price {
+   display: flex;
+   margin-bottom: 20px;
+}
+
+#perfume {
+   letter-spacing: 3px;
+   margin-bottom: 18px;
+   font-size: 0.75rem;
+   color: #6c7289;
+}
+
+#right-side h2 {
+   font-family: 'Fraunces';
+   font-size: 2rem;
+   margin-bottom: 25px;
+   color: #1c232b;
+   line-height: 30px;
+}
+
+#text {
+   color: #6c7289;
+   line-height: 23px;
+   /* letter-spacing: 0.6px; */
+   margin-bottom: 30px;
+}
+
+#price h2 {
+   top: 5px;
+   color: #3c8067;
+   font-family: 'Fraunces';
+}
+
+#price p {
+   position: relative;
+   top: 8px;
+   left: 20px;
+   color: #6c7289;
+   text-decoration: line-through;
+}
+
+button {
+   border: none;
+   width: 100%;
+   height: 45px;
+   background-color: #3c8067;
+   color: white;
+   font-weight: 500;
+   font-size: 0.9rem;
+   border-radius: 7px;
+   letter-spacing: 0.3px;
+}
+
+button:hover {
+   cursor: pointer;
+   transform: scale(1.03);
+}
+
+.fa-solid {
+   margin-right: 10px;
+}
+
+@media (max-width: 450px) {
+   #card {
+      height: 650px;
+      width: 90%;
+      display: inline-block;
+      margin: 0 20px;
+   }
+
+   #right-side {
+      height: 60%;
+      width: 100%;
+   }
+
+   #left-side {
+      height: 40%;
+      width: 100%;
+   }
+
+   #image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+   }
+}
